@@ -10,7 +10,7 @@ function Users(props) {
     useEffect(() => {
         props.fetchAll()
         console.log(props.users);
-    },[])
+    })
     const submitHandler = (e) => {
         e.preventDefault()
         console.log(name);

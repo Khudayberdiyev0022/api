@@ -5,10 +5,10 @@ import {userInformation} from '../actions'
 
 function UserInformation(props) {
 
-    useEffect(() => {
+    useEffect((props) => {
         props.userInformation('bek')
         console.log(props.user);
-    }, [])
+    })
     const user = props
     return (
         <div class="ui card">
